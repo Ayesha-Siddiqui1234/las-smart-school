@@ -9,7 +9,7 @@ const About = () => {
       <div
         className="absolute top-0 left-0 w-full h-full bg-center bg-no-repeat bg-cover z-0"
         style={{
-          backgroundImage: "url('src/assets/back4.JPG')",
+          backgroundImage: "url('/assets/back4.JPG')",
           backgroundAttachment: "scroll", 
           filter: "blur(3px)",            
           transform: "scale(1.05)"        
