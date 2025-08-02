@@ -16,7 +16,7 @@ function Contact() {
     return (
         <div className="bg-gradient-to-b from-purple-300 to-white min-h-screen">
             
-            <div className='relative h-[90vh] bg-cover bg-center' style={{ backgroundImage: "url('src/assets/campus2.jpg')" }}>
+            <div className='relative h-[90vh] bg-cover bg-center' style={{ backgroundImage: "url('/assets/campus2.jpg')" }}>
                 <div className='absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center'>
                     <div className="container mx-auto px-6 mt-5 lg:mt-0 lg:mb-0 mb-5">
                         <form ref={form} onSubmit={sendEmail} className='bg-black bg-opacity-95 max-w-2xl mx-auto p-10 rounded-3xl shadow-2xl transform hover:scale-105 transition duration-300'>
