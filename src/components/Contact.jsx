@@ -16,7 +16,7 @@ function Contact() {
     return (
         <div className="bg-gradient-to-b from-purple-300 to-white min-h-screen">
             
-            <div className='relative h-[90vh] bg-cover bg-center' style={{ backgroundImage: "url('src/assets/campus2.jpg')" }}>
+            <div className='relative h-[90vh] bg-cover bg-center' style={{ backgroundImage: "url('/assets/campus2.jpg')" }}>
                 <div className='absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center'>
                     <div className="container mx-auto px-6 mt-5 lg:mt-0 lg:mb-0 mb-5">
                         <form ref={form} onSubmit={sendEmail} className='bg-black bg-opacity-95 max-w-2xl mx-auto p-10 rounded-3xl shadow-2xl transform hover:scale-105 transition duration-300'>
@@ -84,7 +84,8 @@ function Contact() {
                 <div className="rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 transition duration-300">
                     <iframe
                         title="Google Maps"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25765.067332804723!2d-94.16618081142514!3d36.17547421545538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c914b302758579%3A0xa131eaadd43bbc5a!2sSpringdale%2C%20AR%2C%20USA!5e0!3m2!1sen!2sin!4v1721770478701!5m2!1sen!2sin"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14474.050117920506!2d67.00111085!3d24.8607346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f9093b70c5f%3A0x4b36b6b19a98e3c7!2sKarachi%2C%20Karachi%20City%2C%20Sindh%2C%20Pakistan!5e
+"
                         frameBorder="0"
                         className="w-full h-[500px] border-0"
                         allowFullScreen

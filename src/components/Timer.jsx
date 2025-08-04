@@ -17,7 +17,7 @@ function Timer() {
           </span>
         </div>
         <div className='flex justify-start items-center'>
-            <img src="src/assets/IMG-20250714-WA0008-removebg-preview.png" alt="logo" className='w-[300px]'/>
+            <img src="/assets/IMG-20250714-WA0008-removebg-preview.png" alt="logo" className='w-[300px]'/>
         </div>
       </div>
 

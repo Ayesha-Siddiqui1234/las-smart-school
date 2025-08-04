@@ -23,16 +23,16 @@ const Moto = () => {
                   {React.cloneElement(item.icon, { className: "text-white text-3xl" })}
                 </div>
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-purple-800 text-center">{item.title}</h3>
+              <h3 className="text-2xl font-bold mb-4 text-white text-center">{item.title}</h3>
               <p className="text-white leading-relaxed">{item.description}</p>
             </div>
           ))}
         </div>
 
-        <div className="bg-white rounded-xl shadow-xl p-8">
-          <h2 className="text-3xl font-bold mb-6 text-purple-800 text-center">Our Mission</h2>
-          <p className="text-lg text-white leading-relaxed">
-            At <span className="font-semibold text-purple-800">LAS Smart School</span>, our mission is to cultivate a nurturing and inclusive environment where every student is empowered to reach their full potential. We are committed to providing a holistic education that fosters academic excellence, critical thinking, creativity, and personal growth. Through a balanced approach to learning, we aim to equip our students with the skills and values necessary to become compassionate, responsible, and successful global citizens.
+        <div className="bg-gradient-to-b from-black to-purple-600 rounded-xl shadow-xl p-8">
+          <h2 className="text-3xl font-bold mb-6 text-white text-center">Our Mission</h2>
+          <p className=" text-lg text-white leading-relaxed">
+             <span className=" font-semibold text-white">At LAS Smart School, our mission is to cultivate a nurturing and inclusive environment where every student is empowered to reach their full potential. We are committed to providing a holistic education that fosters academic excellence, critical thinking, creativity, and personal growth. Through a balanced approach to learning, we aim to equip our students with the skills and values necessary to become compassionate, responsible, and successful global citizens.</span>
           </p>
         </div>
       </div>

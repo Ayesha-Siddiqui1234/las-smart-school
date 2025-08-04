@@ -13,17 +13,17 @@ function Navbar() {
     <nav className='w-[100vw]'>
 
       <div className='container-fluid '>
-        <div className="row hidden lg:flex lg:items-center lg:justify-between p-3 text-white bg-gradient-to-br from-purple-800 to-black">
-          <div className="col-6 d-flex items-center">
-            <h5 className='fw-bold'>LAS Smart School</h5>
-          </div>
-        </div>
+<div className="row flex items-center justify-between p-3 bg-gradient-to-br from-purple-800 to-black">
+  <div className="col-12 d-flex items-center justify-center lg:justify-start">
+    <h5 className="text-white font-bold text-lg lg:text-xl">LAS Smart School</h5>
+  </div>
+</div>
 
         <div className="lg:h-fit p-0 row navbar navbar-expand-lg d-flex bg-light">
           <div className="container-fluid bg-gradient-to-br from-black to-purple-400">
             <span className='navbar-brand flex items-center'>
-              <img src="src/assets/IMG-20250714-WA0008-removebg-preview.png" alt="" className='navbar-brand rounded-full object-fill w-[50px] lg:w-[80px]' />
-              <span className='lg:hidden block text-sm'>LAS Smart School</span>
+              <img src="/assets/IMG-20250714-WA0008-removebg-preview.png" alt="" className='navbar-brand rounded-full object-fill w-[50px] lg:w-[80px]' />
+              <span className='lg:hidden block text-sm'></span>
             </span>
 
             <div className="flex " id="navbarNav">
@@ -54,12 +54,12 @@ function Navbar() {
                 </li>
               </ul>
 
-              {/* Mobile Menu Icon */}
+              
               <div className='d-lg-none d-block'>
                 <Menu className='fw-bold fs-1 cursor-pointer' onClick={() => setIsOpen(true)} />
               </div>
 
-              {/* Mobile Sidebar */}
+              
               <div className={`fixed top-0 right-0 h-full bg-gray-800 text-white p-4 w-64 transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out z-50`}>
                 <div className="cursor-pointer text-2xl mb-4" onClick={toggleMenu}>
                   &times;
