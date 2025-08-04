@@ -15,7 +15,7 @@ function Main2() {
 <div className='container'>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div className="lg:text-light mt-5 flex flex-col justify-center">
-            <span className='text-white'>You need to know..</span>
+            <span className='text-white'></span>
             <h1 className='font-bold text-3xl lg:text-5xl mb-4 text-white'>About LAS</h1>
             <p className='text-white text-lg lg:text-xl'>
               
