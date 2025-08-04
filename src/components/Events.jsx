@@ -112,7 +112,7 @@ const Events = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 py-16 bg-purple-400">
+    <div className="container mx-auto px-4 py-16 bg-purple-300">
       <h2 className="text-4xl font-bold text-center mb-12 text-purple-900">Upcoming Events</h2>
       <div className="flex flex-wrap justify-center gap-4 mb-12">
         {eventsData.map((data, index) => (
