@@ -29,7 +29,7 @@ className="bg-gradient-to-r from-black to-black hover:to-purple-900 p-2 lg:px-6 
 </button>
           </div>
 <div className="lg:mt-0 mt-5 flex justify-center items-center mb-5 lg:mb-0">
-  <a href="https://www.wolverhampton.gov.uk/sites/default/files/2023-01/Job%20ref%203-2023%20SDP%20-%20Recruitment%20brochure.pdf" download="broucher.pdf">
+  <a href="https://github.com/Ayesha-Siddiqui1234/las-smart-school/blob/main/public/assets/Brown%20Modern%20Interior%20Brochure.pdf" download="broucher.pdf">
     <img src="/assets/pic1.JPG" className='lg:w-full rounded-lg' alt="Brochure" />
   </a>
 </div>
