@@ -366,39 +366,40 @@ function App() {
         )}
 
         {/* Chatbot toggle button */}
-        <button
-          className="fixed bottom-20 right-5 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition"
-          onClick={() => setChatOpen(!chatOpen)}
-        >
-          <Chat />
-        </button>
+{/* Chatbot toggle button */}
+<button
+  className="fixed bottom-20 right-5 bg-purple-600 text-white p-3 rounded-full shadow-lg hover:bg-purple-800 transition duration-300"
+  onClick={() => setChatOpen(!chatOpen)}
+  style={{ border: "2px solid white" }}
+>
+  <Chat style={{ fontSize: 28 }} />
+</button>
 
-        {/* Chatbot iframe */}
-        {chatOpen && (
-          <div
-            style={{
-              position: 'fixed',
-              bottom: '80px',
-              right: '20px',
-              width: '320px',
-              height: '400px',
-              zIndex: 1000,
-              boxShadow: '0 0 10px rgba(0,0,0,0.3)',
-              borderRadius: '8px',
-              overflow: 'hidden',
-              background: '#fff'
-            }}
-          >
-            <iframe
-              src="https://www.chatbase.co/chatbot-iframe/aY7UFB9Ii0F2ALzhg1ZQy"
-              width="100%"
-              height="100%"
-              frameBorder="0"
-              title="Chatbot"
-            ></iframe>
-          </div>
-        )}
-
+{/* Chatbot iframe */}
+{chatOpen && (
+  <div
+    style={{
+      position: 'fixed',
+      bottom: '80px',
+      right: '20px',
+      width: '320px',
+      height: '400px',
+      zIndex: 1000,
+      boxShadow: '0 0 10px rgba(0,0,0,0.3)',
+      borderRadius: '8px',
+      overflow: 'hidden',
+      background: '#fff'
+    }}
+  >
+    <iframe
+      src="https://www.chatbase.co/chatbot-iframe/aY7UFB9Ii0F2ALzhg1ZQy"
+      width="100%"
+      height="100%"
+      frameBorder="0"
+      title="Chatbot"
+    ></iframe>
+  </div>
+)}
         <Footer />
       </div>
     </Router>
