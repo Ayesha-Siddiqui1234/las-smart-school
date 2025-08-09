@@ -186,15 +186,10 @@
 
 
 
-
-
-
-
-
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import { KeyboardArrowUp } from '@mui/icons-material';
+import { KeyboardArrowUp, Chat } from '@mui/icons-material';
 
 import Coursoul from './components/Coursoul';
 import Main1 from './components/Main1';
@@ -204,7 +199,6 @@ import Navbar from './components/Navbar';
 import Checkout from './components/Checkout';
 import Main3 from './components/Main3';
 import Footer from './components/Footer';
-import About from './components/Faculty';
 import Moto from './components/Moto';
 import Campus from './components/Campus';
 import College from './components/About';
@@ -217,6 +211,7 @@ import Students from './components/Students';
 
 function App() {
   const [isVisible, setIsVisible] = useState(false);
+  const [chatOpen, setChatOpen] = useState(false); // chatbot toggle state
 
   useEffect(() => {
     window.addEventListener('scroll', toggleVisibility);
@@ -370,16 +365,39 @@ function App() {
           </button>
         )}
 
-        {/* Chatbot iframe fixed bottom-right */}
-        <div style={{ position: 'fixed', bottom: '80px', right: '20px', width: '320px', height: '400px', zIndex: 1000, boxShadow: '0 0 10px rgba(0,0,0,0.3)', borderRadius: '8px', overflow: 'hidden' }}>
-          <iframe
-            src="https://www.chatbase.co/chatbot-iframe/aY7UFB9Ii0F2ALzhg1ZQy"
-            width="100%"
-            height="100%"
-            frameBorder="0"
-            title="Chatbot"
-          ></iframe>
-        </div>
+        {/* Chatbot toggle button */}
+        <button
+          className="fixed bottom-20 right-5 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition"
+          onClick={() => setChatOpen(!chatOpen)}
+        >
+          <Chat />
+        </button>
+
+        {/* Chatbot iframe */}
+        {chatOpen && (
+          <div
+            style={{
+              position: 'fixed',
+              bottom: '80px',
+              right: '20px',
+              width: '320px',
+              height: '400px',
+              zIndex: 1000,
+              boxShadow: '0 0 10px rgba(0,0,0,0.3)',
+              borderRadius: '8px',
+              overflow: 'hidden',
+              background: '#fff'
+            }}
+          >
+            <iframe
+              src="https://www.chatbase.co/chatbot-iframe/aY7UFB9Ii0F2ALzhg1ZQy"
+              width="100%"
+              height="100%"
+              frameBorder="0"
+              title="Chatbot"
+            ></iframe>
+          </div>
+        )}
 
         <Footer />
       </div>
@@ -388,5 +406,10 @@ function App() {
 }
 
 export default App;
+
+
+
+
+
 
 
